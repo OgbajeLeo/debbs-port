@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+
+  --color-primary_purple: #8C52FF;
+  --color-primary_green: #22C26E;
+  --color-primary_brown: #AE5B35;
+  --color-primary_darkblue: #114466;
+  --color-primary_gray: #d0c6bc;
+  --color-text_gray: #A5A1A1;
+  --color-hover_gray: #F7F4FF;
+
+}
+
+:root {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #FFFDF1;
+  color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ .no-scrollbar::-webkit-scrollbar {
+   display: none !important;
+ }
+
+ .no-scrollbar {
+   -ms-overflow-style: none   !important;  /* IE and Edge */  
+   scrollbar-width: none !important;  /* Firefox */
+  
+ }
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
