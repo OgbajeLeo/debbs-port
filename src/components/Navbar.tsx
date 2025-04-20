@@ -41,7 +41,7 @@ export default function Navbar() {
             to="/"
             className="font-semibold text-base md:text-xl text-[#323131]"
           >
-            Deborah Aigberuye Michael
+            Deborah Agharaye Michael
           </Link>
 
           {/* Desktop Nav */}
