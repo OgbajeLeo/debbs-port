@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section className="max-w-[1310px] w-full mx-auto px-4 md:px-8 text-[#2E2D2D] pt-20 md:pt-[100px] pb-20 flex flex-col items-center justify-center">
+    <section className="max-w-[1310px] w-full mx-auto px-4 md:px-8 text-[#2E2D2D] pt-20 md:pt-[100px] pb-2 flex flex-col items-center justify-center">
       <h1 className="font-[700] text-[40px]">About me</h1>
       <p className="text-[14px] sm:text-[24px] text-[#2E2D2D] sm:mb-10 mb-12  font-[400] w-full mx-auto text-center">
         I’m Deborah Agharaye Michael, a creative product designer who loves

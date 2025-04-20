@@ -32,27 +32,26 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={clsx(
           "fixed top-0 w-full z-[100] backdrop-blur-md transition-all duration-300",
-          scrolled ? "bg-black/10 shadow-md" : "bg-transparent"
+          scrolled
+            ? "bg-[#FFFDF1] shadow-sm text-[#323131]"
+            : "bg-transparent text-[#323131]"
         )}
       >
         <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
           {/* Logo */}
-          <Link
-            to="/"
-            className="font-semibold text-base md:text-xl text-[#323131]"
-          >
+          <Link to="/" className="font-semibold text-base md:text-xl ">
             Deborah Agharaye Michael
           </Link>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex items-center gap-8 text-[20px] font-medium text-[#323131]">
+          <ul className="hidden md:flex items-center gap-8 text-[20px] font-medium ">
             {navItems.map((item) => (
               <li key={item.to}>
                 <Link
                   to={item.to}
                   className={clsx(
-                    "relative py-1 transition-colors duration-200 hover:text-[#323131]",
-                    location.pathname === item.to && "text-[#323131]"
+                    "relative py-1 transition-colors duration-200 ",
+                    location.pathname === item.to && ""
                   )}
                 >
                   {item.label}
@@ -79,7 +78,7 @@ export default function Navbar() {
           {/* Hamburger Menu */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-[#323131] text-3xl"
+            className="md:hidden  text-3xl"
           >
             {isOpen ? <HiX /> : <HiMenuAlt3 />}
           </button>
